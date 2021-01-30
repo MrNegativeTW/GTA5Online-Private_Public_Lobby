@@ -40,7 +40,7 @@ namespace CodeSwine_Solo_Public_Lobby.Helpers
                 catch (Exception e2)
                 {
                     ErrorLogger.LogException(e2);
-                    ip = "IP not found.";
+                    ip = "找不到 IP :(";
                 }
             }
             return ip;

@@ -82,7 +82,7 @@ namespace CodeSwine_Solo_Public_Lobby
 
         private void SetIpCount()
         {
-            lblAmountIPs.Content = addresses.Count() + " IPs whitelisted!";
+            lblAmountIPs.Content = addresses.Count() + " 個 IP 在白名單內 !";
         }
 
         private void btnEnableDisable_Click(object sender, RoutedEventArgs e)
@@ -129,14 +129,14 @@ namespace CodeSwine_Solo_Public_Lobby
         {
             btnEnableDisable.Background = ColorBrush.Red;
             image4.Source = new BitmapImage(new Uri("/CodeSwine-Solo_Public_Lobby;component/ImageResources/unlocked.png", UriKind.Relative));
-            lblLock.Content = "Rules not active." + Environment.NewLine + "Click to activate!";
+            lblLock.Content = "規則尚未啟用" + Environment.NewLine + "點擊啟用 !";
         }
 
         private void UpdateActive()
         {
             btnEnableDisable.Background = ColorBrush.Green;
             image4.Source = new BitmapImage(new Uri("/CodeSwine-Solo_Public_Lobby;component/ImageResources/locked.png", UriKind.Relative));
-            lblLock.Content = "Rules active." + Environment.NewLine + "Click to deactivate!";
+            lblLock.Content = "規則已啟用" + Environment.NewLine + "點擊關閉 !";
         }
 
         [DllImport("User32.dll")]

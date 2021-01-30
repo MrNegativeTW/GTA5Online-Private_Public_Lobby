@@ -47,7 +47,7 @@ namespace CodeSwine_Solo_Public_Lobby.Helpers
                 if (lblAdmin != null)
                     lblAdmin.Visibility = Visibility.Visible;
                 else
-                    MessageBox.Show("Please start this program as administrator!");
+                    MessageBox.Show("請以系統管理員身分執行!");
             }
         }
 
